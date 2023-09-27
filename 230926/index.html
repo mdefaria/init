@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey.</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+        body {
+            background:
+                repeating-radial-gradient(#2a2a2a 0 0.00001%, #666666 0 0.00002%) 50% 50%/100vh 100vw,
+                repeating-conic-gradient(#2a2a2a 0 0.00001%, #666666 0 0.00002%) 50% 50%/100vh 100vh;
+            background-blend-mode: difference;
+            animation: b 10s infinite alternate;
+        }
+
+        @keyframes b {
+            100% {
+                background-position: 50% 0, 60% 50%
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: monospace;
+
+            background-position: center;
+            transition: background-image 1s;
+            position: relative;
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: content-box;
+            width: 33.333333vw;
+            height: 33.33333vh;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: white;
+        }
+
+        .logo {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 18px;
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        label {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            box-shadow: 1px black;
+        }
+
+        @media screen and (orientation: portrait) {
+            label {
+                max-width: 360px;
+                max-height: 640px;
+            }
+
+            .label1::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-image: url('image-3/image_01.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+
+            input[type="checkbox"]:checked+.label1::before {
+                background-image: url('image-4/image_01.jpg');
+            }
+
+            .label2::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-3/image_02.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label2::before {
+                background-image: url('image-4/image_02.jpg');
+            }
+
+            .label3::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-3/image_03.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label3::before {
+                background-image: url('image-4/image_03.jpg');
+            }
+
+            .label4::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-3/image_04.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label4::before {
+                background-image: url('image-4/image_04.jpg');
+            }
+
+            .label5::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-3/image_05.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label5::before {
+                background-image: url('image-4/image_05.jpg');
+            }
+
+            .label6::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-3/image_06.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label6::before {
+                background-image: url('image-4/image_06.jpg');
+            }
+
+            .label7::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-3/image_07.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label7::before {
+                background-image: url('image-4/image_07.jpg');
+            }
+
+            .label8::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-3/image_08.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label8::before {
+                background-image: url('image-4/image_08.jpg');
+            }
+
+            .label9::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-3/image_09.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label9::before {
+                background-image: url('image-4/image_09.jpg');
+            }
+        }
+
+        /* For landscape, we want the toolbar stick on the left */
+
+        @media screen and (orientation: landscape) {
+
+            @media screen and (max-width: 1920px) {
+
+                label {
+                    max-width: 430px;
+                    max-height: 240px;
+                }
+
+            }
+            @media screen and (min-width: 1920px) {
+
+                label {
+                    max-width: 640px;
+                    max-height: 360px;
+                }
+
+            }
+
+            .label1::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-image: url('image-1/image_01.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+
+            input[type="checkbox"]:checked+.label1::before {
+                background-image: url('image-2/image_01.jpg');
+            }
+
+            .label2::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-1/image_02.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label2::before {
+                background-image: url('image-2/image_02.jpg');
+            }
+
+            .label3::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-1/image_03.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label3::before {
+                background-image: url('image-2/image_03.jpg');
+            }
+
+            .label4::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-1/image_04.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label4::before {
+                background-image: url('image-2/image_04.jpg');
+            }
+
+            .label5::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-1/image_05.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label5::before {
+                background-image: url('image-2/image_05.jpg');
+            }
+
+            .label6::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-1/image_06.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label6::before {
+                background-image: url('image-2/image_06.jpg');
+            }
+
+            .label7::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-1/image_07.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label7::before {
+                background-image: url('image-2/image_07.jpg');
+            }
+
+            .label8::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-1/image_08.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label8::before {
+                background-image: url('image-2/image_08.jpg');
+            }
+
+            .label9::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('image-1/image_09.jpg');
+                background-position: center;
+                transition: opacity 1s;
+                background-size: cover;
+            }
+
+            input[type="checkbox"]:checked+.label9::before {
+                background-image: url('image-2/image_09.jpg');
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html" class="click">
+        <h1>Hey.</h1>
+    </a>
+    <div class="grid-item">
+        <input type="checkbox" id="toggle" />
+        <label class="label1" for="toggle"></label>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" id="toggle2" />
+        <label class="label2" for="toggle2"></label>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" id="toggle3" />
+        <label class="label3" for="toggle3"></label>
+    </div>
+
+    <div class="grid-item">
+        <input type="checkbox" id="toggle4" />
+        <label class="label4" for="toggle4"></label>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" id="toggle5" />
+        <label class="label5" for="toggle5"></label>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" id="toggle6" />
+        <label class="label6" for="toggle6"></label>
+    </div>
+
+    <div class="grid-item">
+        <input type="checkbox" id="toggle7" />
+        <label class="label7" for="toggle7"></label>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" id="toggle8" />
+        <label class="label8" for="toggle8"></label>
+    </div>
+    <div class="grid-item">
+        <input type="checkbox" id="toggle9" />
+        <label class="label9" for="toggle9"></label>
+    </div>
+    <div class="logo">summerboredom</div>
+</body>
+
+</html>
