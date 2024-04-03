@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey.</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            font-family: monospace;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .logo {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 18px;
+        }
+
+        p {
+            color: white;
+        }
+        .click {
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
+        }
+        .eye {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid black;
+        }
+        
+        #left-eye {
+            left: 30%;
+        }
+        
+        #right-eye {
+            left: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html" class="click">
+        <h1>Hey.</h1>
+    </a>
+    <div class="eye" id="left-eye"></div>
+    <div class="eye" id="right-eye"></div>
+    <script src="script.js"></script>
+
+    <div class="logo">summerboredom</div>
+</body>
+
+</html>
