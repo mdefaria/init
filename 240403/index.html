@@ -43,7 +43,7 @@
         .eye {
             width: 100px;
             height: 100px;
-            background-color: white;
+            background-color: black;
             border-radius: 50%;
             position: absolute;
             top: 50%;
@@ -58,6 +58,35 @@
         
         #right-eye {
             left: 70%;
+        }
+        .arrow-shape {
+            width: 100px;
+            height: 100px;
+            border-style: solid;
+            border-width: 0 15px 25px 15px;
+            border-color: transparent transparent white transparent;
+        }
+        
+        .message-bubble {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 18px;
+            animation: fadeOut 3s ease-in-out forwards;
+        }
+        
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
         }
     </style>
 </head>
